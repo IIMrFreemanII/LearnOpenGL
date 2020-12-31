@@ -32,6 +32,6 @@ add_executable(
         src/vendor/imgui/imgui_draw.cpp
         src/vendor/imgui/imgui_impl_glfw_gl3.cpp
         src/Tests/TestClearColor.cpp
-)
+        src/Tests/Test.cpp)
 
 target_link_libraries(OpenGL glew32s.lib glfw3.lib opengl32.lib)
