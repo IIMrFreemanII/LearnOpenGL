@@ -11,6 +11,7 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <Tests/TestClearColor.h>
+#include <Tests/TestTexture2D.h>
 
 int main()
 {
@@ -62,6 +63,7 @@ int main()
         currentTest = testMenu;
 
         testMenu->RegisterTest<Test::TestClearColor>("Clear Color");
+        testMenu->RegisterTest<Test::TestTexture2D>("2D Texture");
 
         /* Loop until the user closes the window */
         while (!glfwWindowShouldClose(window)) {
@@ -84,7 +86,7 @@ int main()
 
                 currentTest->OnImGuiRender();
 
-                ImGui::End();
+                 ImGui::End();
             }
 
             ImGui::Render();
